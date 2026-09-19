@@ -56,7 +56,30 @@ function personalizeLegacyLabels() {
     });
 }
 
+function resolveSitePath(path) {
+    if (!path || path.charAt(0) !== '/' || path.indexOf('//') === 0) return path;
+    if (!location.hostname.endsWith('.github.io')) return path;
+
+    const projectRoot = '/Web';
+    if (path === projectRoot || path.indexOf(projectRoot + '/') === 0) return path;
+    return projectRoot + (path === '/' ? '/' : path);
+}
+
+function fixProjectPageLinks() {
+    if (!location.hostname.endsWith('.github.io')) return;
+
+    document.querySelectorAll('a[href^="/"]').forEach(function(link) {
+        const href = link.getAttribute('href');
+        link.setAttribute('href', resolveSitePath(href));
+    });
+}
+
+window.resolveSitePath = resolveSitePath;
+
 updateDateTime();
 setInterval(updateDateTime, 60000);
 
-document.addEventListener('DOMContentLoaded', personalizeLegacyLabels);
+document.addEventListener('DOMContentLoaded', function() {
+    personalizeLegacyLabels();
+    fixProjectPageLinks();
+});
