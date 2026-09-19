@@ -4,47 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="../svg/favicon.svg">
-    <title>Oak Instituto: README</title>
+    <title>Yuki Instituto: README</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
 <style>
-    .folder-grid:hover {
-        background-color: #F5ECDC; 
-        cursor: default;
-    }
-
-    .folder-grid:hover .folder-item p {
-        color: #5F3B28;
-    }
-    h3{
-        background-color: #5F3B28;
-        color: #F5ECDC;
-        padding-top: 3px;
-        padding-left: 13px; /* 添加内边距以在文字前创建空格 */
-        font-size: 20px;
-    }
-    .highlight {
-            color: #EF5241;
-    }
-    .footer{
-        /* Scale the footer down with the screen so it always stays on one
-           line (caps at 14px on wide screens). ~74px is the fixed gutter
-           between the viewport and the text's available width. */
-        font-size: min(14px, calc((100vw - 74px) / 35));
-        white-space: nowrap;
-        display: flex;
-        justify-content: center;
-        margin: 40px 0px 0px 0px;
-    }
-    /* Hide the folder window on mobile — the README is the focus here */
-    @media screen and (max-width: 959px) {
-        .window.folders { display: none !important; }
-    }
+    .folder-grid:hover { background-color: #F5ECDC; cursor: default; }
+    .folder-grid:hover .folder-item p { color: #5F3B28; }
+    h3{ background-color:#5F3B28;color:#F5ECDC;padding-top:3px;padding-left:13px;font-size:20px; }
+    .highlight { color:#EF5241; }
+    .footer{ font-size:min(14px,calc((100vw - 74px) / 35));white-space:nowrap;display:flex;justify-content:center;margin:40px 0 0 0; }
+    @media screen and (max-width:959px){ .window.folders{display:none!important;} }
 </style>
 <body>
     <div class="desktop-window">
         <div class="title-bar">
-            <span class="title">OAK INSTITUTO<span class="title-suffix"> - README</span></span>
+            <span class="title">YUKI INSTITUTO<span class="title-suffix"> - README</span></span>
             <div class="status-bar">
                 <span class="icon"><img src="../svg/1battery.svg" alt="Battery" class="svg-icon"></span>
                 <span class="icon"><img src="../svg/1bluetooth.svg" alt="Bluetooth" class="svg-icon"></span>
@@ -56,206 +30,99 @@
         <div class="content">
             <div class="windows">
                 <div class="desktopwithicon">
-                    <a href="/" class="desktop-icons">
-                        <img src="../svg/0home.svg" alt="Home" class="desktop-icon">
-                        <div class="icon-name">
-                            <p>homepage</p>
-                        </div>
-                    </a>
-                    <a href="#" class="desktop-icons">
-                        <img src="../svg/0ust.svg" alt="USTs" class="desktop-icon">
-                        <div class="icon-name">
-                            <p>vsqx/ust</p>
-                        </div>
-                    </a>
-                    <a href="/contact" class="desktop-icons">
-                        <img src="../svg/1contact.svg" alt="Contact" class="desktop-icon">
-                        <div class="icon-name">
-                            <p>e-mail</p>
-                        </div>
-                    </a>
-                    <a href="/about" class="desktop-icons">
-                        <img src="../svg/1about.svg" alt="About" class="desktop-icon">
-                        <div class="icon-name">
-                            <p>about.doc</p>
-                        </div>
-                    </a>
+                    <a href="/" class="desktop-icons"><img src="../svg/0home.svg" alt="Home" class="desktop-icon"><div class="icon-name"><p>homepage</p></div></a>
+                    <a href="#" class="desktop-icons"><img src="../svg/0ust.svg" alt="Archive" class="desktop-icon"><div class="icon-name"><p>archive</p></div></a>
+                    <a href="/contact" class="desktop-icons"><img src="../svg/1contact.svg" alt="Contact" class="desktop-icon"><div class="icon-name"><p>e-mail</p></div></a>
+                    <a href="/about" class="desktop-icons"><img src="../svg/1about.svg" alt="About" class="desktop-icon"><div class="icon-name"><p>about.doc</p></div></a>
                 </div>
-                <div class="desktopwithicon2">
-                    <a href="/voicebank" class="desktop-icons">
-                        <img src="../svg/0voicebank.svg" alt="Voicebank" class="desktop-icon">
-                        <div class="icon-name">
-                            <p>voicebank</p>
-                        </div>
-                    </a>
-                </div>
+                <div class="desktopwithicon2"><a href="/voicebank" class="desktop-icons"><img src="../svg/0voicebank.svg" alt="Voicebank" class="desktop-icon"><div class="icon-name"><p>voicebank</p></div></a></div>
                 <div class="window folders">
-                    <div class="title-bar-red">
-                        <img src="../svg/1buttons.svg" alt="Icon 1" class="button-icon"> <!-- Top right corner icons -->
-                    </div>
+                    <div class="title-bar-red"><img src="../svg/1buttons.svg" alt="Icon 1" class="button-icon"></div>
                     <a href="#" class="folder-grid">
-                        <div class="folder-item">
-                            <img src="../svg/1folder.svg" alt="README" class="folder-icon">
-                            <p>README</p>
-                        </div>
-                        <div class="folder-item">
-                            <img src="../svg/1folder.svg" alt="VSQXs" class="folder-icon">
-                            <p>VSQXs</p>
-                        </div>
-                        <div class="folder-item">
-                            <img src="../svg/1folder.svg" alt="USTs" class="folder-icon">
-                            <p>USTs</p>
-                        </div>
-                        <div class="folder-item">
-                            <img src="../svg/1folder.svg" alt="Instrumental" class="folder-icon">
-                            <p>Instrumental</p>
-                        </div>
+                        <div class="folder-item"><img src="../svg/1folder.svg" alt="ReadMe" class="folder-icon"><p>ReadMe</p></div>
+                        <div class="folder-item"><img src="../svg/1folder.svg" alt="Note" class="folder-icon"><p>Note</p></div>
+                        <div class="folder-item"><img src="../svg/1folder.svg" alt="Blog" class="folder-icon"><p>Blog</p></div>
+                        <div class="folder-item"><img src="../svg/1folder.svg" alt="Music" class="folder-icon"><p>Music</p></div>
                     </a>
-                    <!-- Simulated Scrollbars -->
-                    <div class="fake-scrollbar fake-scrollbar-horizontal">
-                        <div class="fake-thumb-horizontal"></div>
-                    </div>
-                    <div class="fake-scrollbar fake-scrollbar-vertical">
-                        <div class="fake-thumb-vertical"></div>
-                    </div>
+                    <div class="fake-scrollbar fake-scrollbar-horizontal"><div class="fake-thumb-horizontal"></div></div>
+                    <div class="fake-scrollbar fake-scrollbar-vertical"><div class="fake-thumb-vertical"></div></div>
                 </div>
                 <div class="window readme" id="readme">
                     <div class="title-bar-white">
                         <div class="title-buttons">
                             <span class="tab english" id="tab-english" onclick="switchLanguage('en')">ENGLISH</span>
                             <span class="tab chinese" id="tab-chinese" onclick="switchLanguage('zh')">CHINESE</span>
-                            <div class="add-icon-container">
-                                <img src="../svg/2add.svg" alt="Add" class="add-icon"> <!-- 新增的加号图标 -->
-                            </div>
+                            <div class="add-icon-container"><img src="../svg/2add.svg" alt="Add" class="add-icon"></div>
                         </div>
-                        <img src="../svg/1buttons.svg" alt="Icon 1" class="button-icon2"> <!-- Top right corner icons -->
+                        <img src="../svg/1buttons.svg" alt="Icon 1" class="button-icon2">
                     </div>
                     <div class="title-bar-readme">
-                        <div class="left-buttons">
-                            <img src="../svg/2arrowleft.svg" alt="Back" class="nav-icon">
-                            <img src="../svg/2arrowright.svg" alt="Forward" class="nav-icon">
-                            <img src="../svg/2arrowsearch.svg" alt="Search" class="nav-icon">
-                        </div>
-                        <div class="white-box"></div> <!-- Add this line -->
-                        <div class="right-buttons">
-                            <img src="../svg/2refresh.svg" alt="Refresh" class="nav-icon">
-                        </div>
+                        <div class="left-buttons"><img src="../svg/2arrowleft.svg" alt="Back" class="nav-icon"><img src="../svg/2arrowright.svg" alt="Forward" class="nav-icon"><img src="../svg/2arrowsearch.svg" alt="Search" class="nav-icon"></div>
+                        <div class="white-box"></div>
+                        <div class="right-buttons"><img src="../svg/2refresh.svg" alt="Refresh" class="nav-icon"></div>
                     </div>
                     <div class="content-readme">
                         <div class="text-english">
-                            <h3>TERMS OF USE​​</h3>
-                            <p>
-                                <ul>
-                                    <li>Credit me as Touka, LongIslandIcedBear, とうか, 灯火, or 長島冰熊 when using these files.</li>
-                                    <li>Credit the original song producers too.</li>
-                                    <li>Don't redistribute or claim them as your own.</li>
-                                    <li>Ask before sharing modified versions.</li>
-                                </ul>
-                            </p>
-                            <h3>DISCLAIMER​​</h3>
-                            <p>
-                                <ul>
-                                    <li>These are covers. I don't own the original songs, just the tuning files.</li>
-                                    <li>Chinese is my first language, so anything else might have mistakes. Let me know if you spot any errors.</li>
-                                </ul>
-                            </p>
-                            <h3>OTHER INFO​</h3>
-                            <p>
-                                <ul>
-                                    <span class="highlight"><li><b>Download password is 「oak」 for all files.</b></li></span>
-                                    <li>Sometimes I'll include the instrumental I used for the tuning (non-Vocaloid stuff only because I don't want to get sued).</li>
-                                    <li>Links may go down if I'm not satisfied with the files. Better versions will be posted eventually.</li>
-                                </ul>
-                            </p>
+                            <h3>BEFORE YOU ENTER</h3>
+                            <ul>
+                                <li>This is GuanHua Yu's personal archive, not a public download dump.</li>
+                                <li>The four folders are <b>ReadMe, Note, Blog and Music</b>.</li>
+                                <li>Please ask before reposting or redistributing modified versions of anything here.</li>
+                                <li>If you quote or share something personal, keep the context and credit the author.</li>
+                            </ul>
+                            <h3>DISCLAIMER</h3>
+                            <ul>
+                                <li>Some pages are intentionally unfinished. This site is a living notebook, not a product catalogue.</li>
+                                <li>External music, images or references remain the property of their respective creators.</li>
+                            </ul>
+                            <h3>OTHER INFO</h3>
+                            <ul>
+                                <li>No password is required. The checkbox is simply the front door.</li>
+                                <li>Links and entries may move as the archive grows.</li>
+                            </ul>
                             <div class="agreement-section">
-                                <p>
-                                    <input type="checkbox" id="termsCheckboxEnglish">
-                                    <label for="termsCheckboxEnglish">By checking this box, you agree to the terms stated above.</label>
-                                </p>
-                                <div class="buttons">
-                                    <button id="declineButtonEnglish" class="decline-btn">Cancel</button>
-                                    <button id="agreeButtonEnglish" class="agree-btn" disabled>Accept & Proceed to Downloads</button>
-                                </div>
+                                <p><input type="checkbox" id="termsCheckboxEnglish"><label for="termsCheckboxEnglish">By checking this box, you acknowledge the note above.</label></p>
+                                <div class="buttons"><button id="declineButtonEnglish" class="decline-btn">Cancel</button><button id="agreeButtonEnglish" class="agree-btn" disabled>Accept &amp; Proceed to Archive</button></div>
                             </div>
-                            <p class="footer">
-                                © 2024 OAK INSTITUTO | Handcrafted by LongIslandIcedBear
-                            </p>
+                            <p class="footer">© 2026 YUKI INSTITUTO | GuanHua Yu</p>
                         </div>
                         <div class="text-chinese">
                             <h3>使用須知</h3>
-                            <p>
-                                <ul>
-                                    <li>若使用本頁面的任意工程，必須在您的影片說明處標明我的名字：Touka 或 LongIslandIcedBear 或 とうか 或 灯火 或 長島冰熊。</li>
-                                    <li>您也必須在影片說明處標明歌曲的本家訊息。</li>
-                                    <li>禁止隨意在公開場合對此頁面的工程進行二次配布。</li>
-                                    <li>如需配布修改后的工程（包括但不限於歌詞修正、音素編輯、PIT編輯或文件格式轉換），請私訊聯絡我進行詢問。</li>
-                                </ul>
-                            </p>
+                            <ul>
+                                <li>這裡是 GuanHua Yu 的個人存檔，不是公開下載站。</li>
+                                <li>四個資料夾分別是 <b>ReadMe、Note、Blog、Music</b>。</li>
+                                <li>如需轉載、二次修改或重新發布本站內容，請先聯絡我。</li>
+                                <li>如果引用或分享較私人的內容，請保留上下文並標註來源。</li>
+                            </ul>
                             <h3>免責聲明</h3>
-                            <p>
-                                <ul>
-                                    <li>本頁面的工程版權屬於我，但歌曲版權屬於它們的本家。我不主張對這些歌曲有任何所有權。</li>
-                                    <li>由於工程製作者的母語是中文，在創作其他語種的工程時可能會出現歌詞錯誤的現象。請多多包涵。如果發現錯誤，請及時私訊聯絡我進行更正。</li>
-                                </ul>
-                            </p>
+                            <ul>
+                                <li>部分頁面會長期維持施工中狀態，這是個人筆記本，不是產品型網站。</li>
+                                <li>外部音樂、圖片與引用內容的權利仍屬其原作者。</li>
+                            </ul>
                             <h3>其他一些</h3>
-                            <p>
-                                <ul>
-                                    <span class="highlight"><li><b>本站下載頁面所有文件的密碼均為「oak」。</b></li></span>
-                                    <li>對於一些非ボカロ的遠古曲目，我會附上我爬譜時所使用的伴奏（大概率會是去人聲去得很爛的配樂）。</li>
-                                    <li>出於品質考量（以及羞恥心）我偶爾會下架一些自認為不佳的舊工程，修改完成後會重新上架。</li>
-                                </ul>
-                            </p>
+                            <ul>
+                                <li>進入資料夾不需要密碼，勾選框只是這個網站的「前門」。</li>
+                                <li>頁面、連結和內容會隨著網站更新而移動。</li>
+                            </ul>
                             <div class="agreement-section">
-                                <p>
-                                    <input type="checkbox" id="termsCheckboxChinese">
-                                    <label for="termsCheckboxChinese">勾選此框，即表示您接受上述條款。</label>
-                                </p>
-                                <div class="buttons">
-                                    <button id="declineButtonChinese" class="decline-btn">取消</button>
-                                    <button id="agreeButtonChinese" class="agree-btn" disabled>接受並進入下載頁面</button>
-                                </div>
+                                <p><input type="checkbox" id="termsCheckboxChinese"><label for="termsCheckboxChinese">勾選此框代表你已閱讀並接受上面的說明。</label></p>
+                                <div class="buttons"><button id="declineButtonChinese" class="decline-btn">取消</button><button id="agreeButtonChinese" class="agree-btn" disabled>接受並進入資料夾</button></div>
                             </div>
-                            <p class="footer">
-                                © 2024 OAK INSTITUTO | Handcrafted by LongIslandIcedBear
-                            </p>
+                            <p class="footer">© 2026 YUKI INSTITUTO | GuanHua Yu</p>
                         </div>
                     </div>
                 </div>
                 <nav class="taskbar">
-                    <span class="icon">
-                        <a href="/" title="Home">
-                            <img src="../svg/0home.svg" alt="Home" class="home-icon">
-                        </a>
-                    </span>
-                    <span class="icon">
-                        <a href="#" title="VSQX / UST">
-                            <img src="../svg/0ust.svg" alt="VSQX / UST" class="home-icon">
-                        </a>
-                    </span>
-                    <span class="icon">
-                        <a href="/voicebank" title="Voicebank">
-                            <img src="../svg/0voicebank.svg" alt="Voicebank" class="home-icon">
-                        </a>
-                    </span>
-                    <span class="icon">
-                        <a href="/contact" title="Contact">
-                            <img src="../svg/0contact.svg" alt="Contact" class="home-icon">
-                        </a>
-                    </span>
-                    <span class="icon">
-                        <a href="/about" title="About">
-                            <img src="../svg/0about.svg" alt="About" class="home-icon">
-                        </a>
-                    </span>
+                    <span class="icon"><a href="/" title="Home"><img src="../svg/0home.svg" alt="Home" class="home-icon"></a></span>
+                    <span class="icon"><a href="#" title="Archive"><img src="../svg/0ust.svg" alt="Archive" class="home-icon"></a></span>
+                    <span class="icon"><a href="/voicebank" title="Voicebank"><img src="../svg/0voicebank.svg" alt="Voicebank" class="home-icon"></a></span>
+                    <span class="icon"><a href="/contact" title="Contact"><img src="../svg/0contact.svg" alt="Contact" class="home-icon"></a></span>
+                    <span class="icon"><a href="/about" title="About"><img src="../svg/0about.svg" alt="About" class="home-icon"></a></span>
                 </nav>
             </div>
         </div>
     </div>
-    <div class="mobile-message">
-        <img src="../svg/0mobile.svg" alt="Home" class="mobile-icon">
-        <p>Unfortunately at Oak Instituto we think mobile second and this website is not available for handheld devices yet.</p>
-    </div>
+    <div class="mobile-message"><img src="../svg/0mobile.svg" alt="Home" class="mobile-icon"><p>Yuki Instituto is designed as a desktop-style site. Please use a larger screen for the full experience.</p></div>
     <script src="../date.js"></script>
     <script src="language.js"></script>
     <script src="../norightclick.js"></script>
