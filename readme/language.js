@@ -19,7 +19,10 @@ function switchLanguage(language) {
     }
 }
 
-// Function to apply the checkbox listener based on the selected language
+function sitePath(path) {
+    return window.resolveSitePath ? window.resolveSitePath(path) : path;
+}
+
 function applyCheckboxListener(language) {
     let termsCheckbox, agreeButton, declineButton;
 
@@ -48,20 +51,18 @@ function applyCheckboxListener(language) {
     if (agreeButton) {
         agreeButton.addEventListener('click', () => {
             if (termsCheckbox.checked) {
-                window.location.href = '/vsqxnust'; // Change this to the actual download page URL
+                window.location.href = sitePath('/vsqxnust');
             }
         });
     }
 
     if (declineButton) {
         declineButton.addEventListener('click', () => {
-            window.location.href = '/'; // Change this to the actual homepage URL
+            window.location.href = sitePath('/');
         });
     }
 }
 
-
-// Set the default language to English on page load
 document.addEventListener('DOMContentLoaded', () => {
     switchLanguage('en');
 });
