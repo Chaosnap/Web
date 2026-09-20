@@ -10,18 +10,25 @@
         @media screen and (min-width: 960px) and (min-height: 701px) {
             .window.folders {
                 bottom: calc(1% + 40px);
+                width: 314px;
+            }
+
+            .window.folders .folder-grid {
+                box-sizing: border-box;
+                width: 100%;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
             }
 
             .window.folders .fake-scrollbar-horizontal {
-                width: auto !important;
+                width: 314px !important;
                 left: -3px !important;
-                right: 15px !important;
+                right: auto !important;
             }
 
             .window.folders .fake-scrollbar-vertical {
-                height: auto !important;
+                height: 276px !important;
                 top: 28px !important;
-                bottom: 15px !important;
+                bottom: auto !important;
             }
 
             .window.player {
